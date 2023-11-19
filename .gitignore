@@ -164,3 +164,5 @@ data/chroma/863ec92d-3170-4dcc-b3ac-7b99a5b05b5e/data_level0.bin
 data/chroma/863ec92d-3170-4dcc-b3ac-7b99a5b05b5e/header.bin
 data/chroma/863ec92d-3170-4dcc-b3ac-7b99a5b05b5e/length.bin
 data/chroma/863ec92d-3170-4dcc-b3ac-7b99a5b05b5e/link_lists.bin
+stuffs/chain_from_existing_run.ipynb
+stuffs/llm_from_dataset.ipynb
