@@ -82,7 +82,7 @@ if __name__ == "__main__":
     ask_question_multiquery(question=question)
 ```
 
-> The question is about the PDF I used to check things. I used an online version of the picture book for children that I wrote. You can find it at https://amzn.eu/d/1gVvNUq.
+> The question is about the PDF I used to check things. I used an online version of the illustrated book for children that I wrote. You can find it at https://amzn.eu/d/1gVvNUq.
 > ❤️
 
 # Testing and Evaluating with Langsmith
