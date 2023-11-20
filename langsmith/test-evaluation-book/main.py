@@ -108,7 +108,7 @@ def ask_question_multiquery(question: str):
 
     rag_chain = SequentialChain(
         chains=[retrieval_chain, qa_chain],
-        input_variables=["question"],  # we need to name differently to output "query"
+        input_variables=["question"],  # different name for output "query"
         output_variables=["query", "contexts", "text"],
     )
 
