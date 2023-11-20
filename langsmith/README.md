@@ -1,4 +1,4 @@
-# Test and Evaluation of ConversationalRetrieval and MultiQuery Approaches with Langsmith
+# Testing and Evaluation of Conversational Retrieval and Multi-Query Approaches with Langsmith.
 
 ## Overview
 
