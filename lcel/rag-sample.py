@@ -30,7 +30,7 @@ llm = AzureChatOpenAI(
 
 def _get_retriever():
     vectorstore = Chroma.from_texts(
-        ["Luca is passionate about LLMs and GenerativeAi"], embedding=embedding
+        ["Sam is passionate about LLMs and GenerativeAi"], embedding=embedding
     )
     retriever = vectorstore.as_retriever()
     return retriever
@@ -87,7 +87,7 @@ def rag_with_different_inputs(question: str, style: str):
 
 
 if __name__ == "__main__":
-    question = "What is Luca passionate about?"
+    question = "What is Sam passionate about?"
 
     # result = simple_rag(question=question)
     style = "Heavy Metal Fan"

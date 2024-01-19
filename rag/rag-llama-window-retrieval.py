@@ -40,8 +40,8 @@ from llama_index.vector_stores import ChromaVectorStore
 
 
 ### THE LLM
-api_key = os.getenv("OPENAI_API_KEY")
-azure_endpoint = os.getenv("OPENAI_API_BASE")
+api_key = os.getenv("AZURE_OPENAI_API_KEY")
+azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
 api_version = os.getenv("OPENAI_API_VERSION")
 
 llm = AzureOpenAI(
