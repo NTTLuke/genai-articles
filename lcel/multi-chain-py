@@ -1,0 +1,33 @@
+from operator import itemgetter
+from langchain.chat_models.azure_openai import AzureChatOpenAI
+from langchain.embeddings.azure_openai import AzureOpenAIEmbeddings
+
+from langchain.prompts import ChatPromptTemplate
+from langchain.schema import StrOutputParser
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+prompt1 = ChatPromptTemplate.from_template("Who is the singer of {band}?")
+prompt2 = ChatPromptTemplate.from_template(
+    "Where {singer} was born? Remember to speak as {style} when giving your final answer."
+)
+
+# llm
+llm = AzureChatOpenAI(
+    azure_deployment=os.getenv("OPENAI_CHAT_DEPLOYMENT_NAME"),
+    openai_api_type="azure",
+    temperature=0.0,
+)
+
+
+chain1 = prompt1 | llm | StrOutputParser()
+
+chain2 = (
+    {"singer": chain1, "style": itemgetter("style")} | prompt2 | llm | StrOutputParser()
+)
+
+response = chain2.invoke({"band": "Iron Maiden", "style": "hip hop rapper"})
+print(response)

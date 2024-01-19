@@ -98,6 +98,7 @@ def ask_question_multiquery(question: str):
     # Chain
     qa_chain = LLMChain(llm=llm, prompt=QA_PROMPT)
 
+    # LEGACY CODE - REPLACED BY LCEL
     retrieval_chain = TransformChain(
         input_variables=["question"],
         output_variables=["query", "contexts"],
@@ -128,4 +129,4 @@ if __name__ == "__main__":
     # ask_question(question=question)
 
     ## ASK QUESTION WITH MULTIQUERY RETRIEVER
-    # ask_question_multiquery(question=question)
+    ask_question_multiquery(question=question)
