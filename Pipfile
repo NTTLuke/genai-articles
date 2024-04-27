@@ -25,6 +25,7 @@ langchain-openai = "*"
 sentence-transformers = "*"
 ragas = "*"
 langchainhub = "*"
+crewai = "*"
 
 [dev-packages]
 ipykernel = "*"
