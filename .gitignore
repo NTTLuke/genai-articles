@@ -166,3 +166,4 @@ docs/detrazioni.txt
 sample-docs/detrazioni-miste.txt
 community/crewai/comm-crewai/*
 
+.vscode/launch.json
